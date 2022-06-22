@@ -23,6 +23,11 @@ volumes:
     name: data
     size: 5Gi
     mode: ReadWriteOnce   
+  - claim: postgres-master-backup
+    mount: /appz/backup
+    name: backup
+    size: 15Gi 
+
     
 properties:
     POSTGRESQL_REPLICATION_MODE: master
@@ -39,6 +44,7 @@ properties:
       vault: PGPASSWORD
     POSTGRESQL_OPENPROJECT_PASSWORD:
       vault: POSTGRESQL_OPENPROJECT_PASSWORD
+    STATEMENT_TIME: 120s
     revision : 81
 
     #WebDav Setup
