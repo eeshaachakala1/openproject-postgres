@@ -44,7 +44,7 @@ properties:
       vault: PGPASSWORD
     POSTGRESQL_OPENPROJECT_PASSWORD:
       vault: POSTGRESQL_OPENPROJECT_PASSWORD
-    STATEMENT_TIME: 120s
+    STATEMENT_TIME: 0
     revision : 82
 
     #WebDav Setup
