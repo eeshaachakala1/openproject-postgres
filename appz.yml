@@ -45,7 +45,7 @@ properties:
     POSTGRESQL_OPENPROJECT_PASSWORD:
       vault: POSTGRESQL_OPENPROJECT_PASSWORD
     STATEMENT_TIME: 120s
-    revision : 84
+    revision : 85
 
     #WebDav Setup
     #PUSH_BACKUP_WEBDAV: False
